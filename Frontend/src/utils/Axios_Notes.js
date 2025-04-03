@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const axiosNotesInstance = axios.create({
-    baseURL :"https://notes-writelt.onrender.com/api/user",
+    baseURL : import.meta.env.VITE_NOTES_URL,
 
     headers : {
         "Content-Type" : "application/json"

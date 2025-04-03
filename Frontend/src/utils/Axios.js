@@ -3,7 +3,7 @@ import axios from "axios"
  
 
 export const axiosInstance = axios.create({
-    baseURL :"https://notes-writelt.onrender.com/api",
+    baseURL :  import.meta.env.VITE_USER_URL,
     headers : {
         "Content-Type" : "application/json",
   
